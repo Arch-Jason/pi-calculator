@@ -3,6 +3,8 @@ package main
 
 import (
 	"fmt"
+
+	"gopkg.in/gookit/color.v1"
 )
 
 func main() {
@@ -20,9 +22,11 @@ func main() {
 			x = x + 1/fenmu
 		}
 		fenmu += 2
+		fmt.Println(x * 4)
 	}
 
 	pi := 0.0
 	pi = x * 4
-	fmt.Println(pi)
+	color.Yellow.Println("the pi:")
+	color.Yellow.Println(pi)
 }
